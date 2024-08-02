@@ -217,8 +217,8 @@ def login_(nonce,token):
         "fds_otp": token
     }
     param = {
-        'account':'18306538256',
-        'password': encrypt_rsa('Gx@18306538256'),
+        'account':'18306533233',
+        'password': encrypt_rsa('123456'),
         'nonce':nonce
     }
     signature = ctx.call('q',param)
@@ -246,7 +246,7 @@ if __name__ == '__main__':
     # nonce = getNonce(token)
     nonce = '0-566BE436379337d59695e07d5dade68ccd75da607149657df9a77b55243aa4'
     param = {
-        'account': '18306538256',
+        'account': '18306533233',
         'password': rsa_password,
         'nonce': nonce
     }
